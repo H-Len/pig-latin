@@ -10,7 +10,8 @@ var pigLatin = function(word) {
 // };
 
   if (userInput === "a" || userInput === "e" || userInput === "i" || userInput === "o" || userInput === "u") {
-    return true;
+    //var pLatin = ;
+    return userInput + "way";
   } else {
     return false;
   };
