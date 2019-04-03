@@ -34,12 +34,6 @@ If the first consonants include "qu", move the "u" along with the "q". Don't for
 For words beginning with "y", treat "y" as a consonant._
 
 _Specs for pig-latin application
-* The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
-  Example Input: 3
-  Example Output: 3
-* The program converts all letters to lower case.
-  Example input: StUfF
-  Example output: stuff
 * The program adds "way" to single-letter words beginning with a vowel.
   Example Input: i
   Example Output: iway
@@ -61,6 +55,12 @@ _Specs for pig-latin application
 * This program will convert all words in a multi-word sentence into pig latin.
   Example input: Billy likes to skateboard
   Example output: illybay ikeslay otay ateboardskay
+  * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+  Example Input: 3
+  Example Output: 3
+  * The program converts all letters to lower case.
+  Example input: StUfF
+  Example output: stuff
 _
 
 ## Setup/Installation Requirements
