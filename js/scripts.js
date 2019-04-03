@@ -3,6 +3,8 @@
 var pigLatin = function(word) {
   if ($("input#user-input").val() === "a") {
     return true;
+  } else {
+    return false;
   };
 };
 
