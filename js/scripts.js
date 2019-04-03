@@ -3,15 +3,18 @@
 var pigLatin = function(word) {
   var userInput = $("input#user-input").val();
   var inputArr = ['a', 'e', 'i', 'o', 'u'];
+  var vowelTest = inputArr.indexOf(userInput);
+console.log(userInput.slice(0));
 
-console.log(inputArr.indexOf(userInput));
-
-  if (inputArr.indexOf(userInput) >= 0) {
-   return userInput + "way";
+  if (vowelTest >= 0) {
+    return userInput + "way";
+  } else if (inputArr.indexOf(0) <= userInput.slice(0, 0)) {
+    return userInput + "way";
   } else {
-   return false;
+    return false
+  };
  };
-};
+
 
 
 //   // userInput.forEach(function(inputArr) {
