@@ -37,18 +37,15 @@ _Specs for pig-latin application
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
   Example Input: 3
   Example Output: 3
+* The program converts all letters to lower case.
+  Example input: StUfF
+  Example output: stuff
 * The program adds "way" to single-letter words beginning with a vowel.
   Example Input: i
   Example Output: iway
-* The program adds "way" to single-letter words beginning with a vowel, REGARDLESS of case.
-  Example Input: "I"
-  Example Output: Iway
 * The program adds "way" to multi-letter words beginning with a vowel.
   Example Input: igloo
   Example Output: igloo-way
-* The program adds "way" to multi-letter words beginning with a vowel, REGARDLESS of case.
-  Example Input: Igloo
-  Example Output: Igloo-way
 * For words beginning with one consonant, this program removes the consonant from word's beginning and moves it to the end of the word, then adds "ay" onto the end.
   Example Input: purse
   Example Output: ursepay
@@ -61,7 +58,10 @@ _Specs for pig-latin application
 * For words with a "qu", the program moves the "u" to the end of the word along with the q, and then adds "ay" onto the end.
   Example input: quilt
   Example output: iltquay
-*
+* This program will convert all words in a multi-word sentence into pig latin.
+  Example input: Billy likes to skateboard
+  Example output: illybay ikeslay otay ateboardskay
+_
 
 ## Setup/Installation Requirements
 
