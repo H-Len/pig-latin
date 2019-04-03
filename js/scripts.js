@@ -4,14 +4,16 @@ var pigLatin = function(word) {
   var userInput = $("input#user-input").val();
   var inputArr = ['a', 'e', 'i', 'o', 'u'];
   var vowelTest = inputArr.indexOf(userInput);
-console.log(userInput.slice(0));
+
+  console.log(vowelTest);
+  console.log(inputArr.indexOf(userInput.slice(0, 0)));
 
   if (vowelTest >= 0) {
     return userInput + "way";
-  } else if (inputArr.indexOf(0) <= userInput.slice(0, 0)) {
+  } else if (vowelTest < (userInput.slice(0, 0))) {
     return userInput + "way";
-  } else {
-    return false
+  } else if (//first letter is NOT one of the inputArr values) {
+    return userInput + "ay";
   };
  };
 
