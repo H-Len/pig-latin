@@ -35,21 +35,33 @@ For words beginning with "y", treat "y" as a consonant._
 
 _Specs for pig-latin application
 * The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
-    Example Input: 3
-    Example Output: 3
+  Example Input: 3
+  Example Output: 3
 * The program adds "way" to single-letter words beginning with a vowel.
-    Example Input: i
-    Example Output: iway
+  Example Input: i
+  Example Output: iway
 * The program adds "way" to single-letter words beginning with a vowel, REGARDLESS of case.
-    Example Input: "I"
-    Example Output: Iway
+  Example Input: "I"
+  Example Output: Iway
 * The program adds "way" to multi-letter words beginning with a vowel.
-    Example Input: igloo
-    Example Output: igloo-way
+  Example Input: igloo
+  Example Output: igloo-way
 * The program adds "way" to multi-letter words beginning with a vowel, REGARDLESS of case.
-    Example Input: Igloo
-    Example Output: Igloo-way
-* This program
+  Example Input: Igloo
+  Example Output: Igloo-way
+* For words beginning with one consonant, this program removes the consonant from word's beginning and moves it to the end of the word, then adds "ay" onto the end.
+  Example Input: purse
+  Example Output: ursepay
+* For words beginning with y, the program treats y as a consonant. The program moves y to the end of the word, then adds "ay" onto the end.
+  Example input: yellow
+  Example output: ellowyay
+* For words beginning with multiple consecutive consonants, this program removes the consonants from word's beginning and moves them to the end of the word, then adds "ay" onto the end.
+  Example input: stuff
+  Example output: uffstay
+* For words with a "qu", the program moves the "u" to the end of the word along with the q, and then adds "ay" onto the end.
+  Example input: quilt
+  Example output: iltquay
+*
 
 ## Setup/Installation Requirements
 
