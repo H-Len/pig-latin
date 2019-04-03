@@ -1,7 +1,15 @@
 //Business logic
 
 var pigLatin = function(word) {
-  if ($("input#user-input").val() === "a") {
+  var userInput = $("input#user-input").val();
+//   var inputArrs = ['a', 'e', 'i', 'o', 'u'];
+//   // userInput.forEach(function(inputArr) {
+//   //   userInput === inputArr;
+//     return true;
+//   });
+// };
+
+  if (userInput === "a" || userInput === "e" || userInput === "i" || userInput === "o" || userInput === "u") {
     return true;
   } else {
     return false;
